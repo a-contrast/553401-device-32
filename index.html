@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#">
+      <a>
         <img class="logo" src="#" alt="Логотип">
       </a>
       <form action="https://echo.htmlacademy.ru" method="post" class="search">
@@ -25,43 +25,46 @@
         </li>
       </ul>
       <nav class="navigation-main">
-        <a href="#">Каталог товаров</a>
-        <ul class="navigation-main-column-list">
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Виртуальная реальность</a>
+        <div class="navigation-main-catalog">
+          <a href="#">Каталог товаров</a>
+          <ul class="navigation-main-column-list">
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Виртуальная реальность</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="monopod.html">Моноподы для cелфи</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul class="navigation-main-column-list">
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Умные часы</a>
+            </li>
+          </ul>
+          <ul class="navigation-main-column-list">
+            <li class="navigation-main-item">
+              <a class="navigation-main-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navigation-services-list">
+          <li class="navigation-service-item">
+            <a class="navigation-service-link" href="#">Доставка</a>
           </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="monopod.html">Моноподы для cелфи</a>
+          <li class="navigation-service-item">
+            <a class="navigation-service-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Экшн-камеры</a>
-          </li>
-        </ul>
-        <ul class="navigation-main-column-list">
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Умные часы</a>
-          </li>
-        </ul>
-        <ul class="navigation-main-column-list">
-          <li class="navigation-main-item">
-            <a class="navigation-main-link" href="#">Квадрокоптеры</a>
+          <li class="navigation-service-item">
+            <a class="navigation-service-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-service-list">
-        <li class="header-service-item">
-          <a class="header-service-link" href="#">Доставка</a>
-        </li>
-        <li class="header-service-item">
-          <a class="header-service-link" href="#">Гарантия</a>
-        </li>
-        <li class="header-service-item">
-          <a class="header-service-link" href="#">Контакты</a>
-        </li>
-      </ul>
+
     </header>
 
     <main class="main-index">
@@ -70,7 +73,7 @@
       <section class="slider-promo">
         <h2 class="visually-hidden">Демо товаров</h2>
 
-        <div class="slider slider-01">
+        <div class="slider slider-01 slider-active">
           <div class="slider-image-block">
             <img class="slider-image" src="#" alt="Квадрокоптер">
             <button class="slider-button slider-image-prev">
@@ -153,7 +156,7 @@
 
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <button class="slider-pagination-button slider-pagination-button-active" type="button">
               <span class="visually-hidden">1 слайд</span>
             </button>
           </li>
@@ -170,8 +173,8 @@
         </ol>
       </section>
 
-      <nav class="navigarion-secondary">
-        <h2 class="visually-hidden">Навигация по сайту</h2>
+      <section class="navigarion-secondary">
+        <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
         <ul class="navigarion-secondary-list">
           <li class="navigarion-secondary-item">
             <a class="navigarion-secondary-image-link" href="#">
@@ -210,7 +213,7 @@
             <a class="navigarion-secondary-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
-      </nav>
+      </section>
 
       <section class="service">
         <h2 class="visually-hidden">Наши сервисы</h2>
