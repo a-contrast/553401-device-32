@@ -339,6 +339,10 @@ body {
   margin-left: auto;
 }
 
+.inner-header {
+  padding-left: 60px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 19px;
@@ -347,9 +351,13 @@ body {
   opacity: 0.6;
 }
 
-.catalog-filter {
+.catalog-section {
   font-size: 16px;
   line-height: 19px;
+}
+
+.catalog-container {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -360,6 +368,10 @@ body {
 }
 
 .catalog-filter-form {
+  width: 330px;
+  padding-left: 60px;
+  padding-right: 70px;
+  margin-right: 70px;
   background-color: #EBEBEB;
 }
 
@@ -373,6 +385,10 @@ body {
   font-size: 15px;
   line-height: 18px;
   opacity: 0.3;
+}
+
+.catalog-right-column {
+  width: 760px;
 }
 
 .sorting-type {
