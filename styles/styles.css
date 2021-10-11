@@ -354,6 +354,16 @@ body {
 .catalog-section {
   font-size: 16px;
   line-height: 19px;
+  background: linear-gradient(to right, #EBEBEB calc(50% - 250px), transparent calc(50% - 250px));
+}
+
+.catalog-header {
+  background: linear-gradient(to right, #DCDCDC calc(50% - 250px), transparent calc(50% - 250px));
+  background-color: #EBEBEB;
+}
+
+.catalog-header-container {
+  display: flex;
 }
 
 .catalog-container {
@@ -361,6 +371,11 @@ body {
 }
 
 .catalog-filter-title {
+  width: 330px;
+  padding-left: 60px;
+  padding-right: 70px;
+  margin: 0;
+  margin-right: 70px;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-transform: uppercase;

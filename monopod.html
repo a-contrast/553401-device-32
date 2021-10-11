@@ -90,9 +90,31 @@
       </header>
 
       <section class="catalog-section">
+        <header class="catalog-header">
+          <div class="catalog-header-container page-container">
+            <h2 class="catalog-filter-title">Фильтр:</h2>
+            <div class="sorting-type">
+              <form>
+                <label class="sorting-label" for="sorting">Сортировка:</label>
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="popular">Сначала популярное</option>
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+              </form>
+              <a href="#" class="button-up">
+                <span class="visually-hidden">Сортировать по возрастанию</span>
+              </a>
+              <a href="#" class="button-down">
+                <span class="visually-hidden">Сортировать по убыванию</span>
+              </a>
+            </div>
+          </div>
+        </header>
+
         <div class="catalog-container page-container">
           <div class="catalog-filter-form">
-            <h2 class="catalog-filter-title">Фильтр:</h2>
             <form action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-legend">Стоимость</legend>
@@ -162,24 +184,6 @@
           </div>
 
           <div class="catalog-right-column">
-            <div class="sorting-type">
-              <form>
-                <label class="sorting-label" for="sorting">Сортировка:</label>
-                <select class="select-control" id="sorting" name="sorting">
-                  <option value="popular">Сначала популярное</option>
-                  <option value="cheap">Сначала дешёвое</option>
-                  <option value="expensive">Сначала дорогое</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-              </form>
-              <a href="#" class="button-up">
-                <span class="visually-hidden">Сортировать по возрастанию</span>
-              </a>
-              <a href="#" class="button-down">
-                <span class="visually-hidden">Сортировать по убыванию</span>
-              </a>
-            </div>
-
             <ul class="product-list">
               <li class="product-item">
                 <article class="product-card">
