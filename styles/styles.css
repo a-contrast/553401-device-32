@@ -358,8 +358,7 @@ body {
 }
 
 .catalog-header {
-  background: linear-gradient(to right, #DCDCDC calc(50% - 250px), transparent calc(50% - 250px));
-  background-color: #EBEBEB;
+  background: linear-gradient(to right, #DCDCDC calc(50% - 250px), #EBEBEB calc(50% - 250px));
 }
 
 .catalog-header-container {
