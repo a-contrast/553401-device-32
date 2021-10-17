@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>            
+  <body>
     <header class="page-header">
       <a class="header-logo-link">
         <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип.">
@@ -31,7 +31,7 @@
       <nav class="navigation-main">
         <div class="navigation-main-catalog">
           <a class="navigation-main-link" href="#">Каталог товаров</a>
-          <ul class="navigation-main-list visually-hidden">
+          <div class="navigation-main-list visually-hidden">
             <ul class="navigation-main-column-list navigation-list">
               <li class="navigation-main-item">
                 <a class="main-catalog-link" href="#">Виртуальная реальность</a>
@@ -56,7 +56,7 @@
                 <a class="main-catalog-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
-          </ul>
+          </div>
         </div>
         <ul class="navigation-service-list navigation-list">
           <li class="navigation-service-item">
@@ -349,9 +349,11 @@
   </body>
 </html>
 
-<!-- 
-  1. не могу найти закономерность в спецификациях на слайдах - глядя на слайды с дроном и селфи-палками - там 
+<!--
+  чувствую переборщил я при создании сеток, возможно требуется созвон
+  1. не могу найти закономерность в спецификациях на слайдах - глядя на слайды с дроном и селфи-палками - там
      разное расстояние между блоками спецификаций
-  2. в слайдере сервисов - текстовый блок service-info-text имеет ширину 480px для всех слайдов, кроме доставки - 
-     к нему либо отдельно применять ширину (и при этом все равно без br не обойтись), либо использовать да br 
+  2. в слайдере сервисов - текстовый блок service-info-text имеет ширину 480px для всех слайдов, кроме доставки -
+     к нему либо отдельно применять ширину (и при этом все равно без br не обойтись), либо использовать да br
+  3. навигацию (там где три списка подряд) возможно лучше сделать на гридах
 -->
