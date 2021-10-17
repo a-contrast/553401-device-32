@@ -6,67 +6,70 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html">
+    <header class="page-header page-header-inner">
+      <a class="header-logo-link" href="index.html">
         <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип.">
       </a>
       <div class="page-header-center">
         <form action="https://echo.htmlacademy.ru" method="post" class="search">
           <label class="visually-hidden" for="search-input">Поиск по сайту</label>
           <input class="search-input" id="search-input" type="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="account-list">
-          <li class="account-item">
+          <li class="account-item account-item-active">
             <a class="account-link" href="#">Коля Петухов</a>
           </li>
-          <li class="account-item active">
+          <li class="account-item account-item-exit">
             <a class="account-link" href="#">Выйти</a>
           </li>
           <li class="account-item">
             <a class="account-link" href="#">Сравнить</a>
           </li>
-          <li class="account-item">
+          <li class="account-item account-item-cart">
             <a class="account-link" href="#">Корзина</a>
           </li>
         </ul>
       </div>
       <nav class="navigation-main">
         <div class="navigation-main-catalog">
-          <a class="main-catalog-link" href="#">Каталог товаров</a>
-          <ul class="navigation-main-column-list navigation-list">
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="navigation-main-item">
-              <a class="navigation-main-link">Моноподы для cелфи</a>
-            </li>
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="navigation-main-column-list navigation-list">
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="navigation-main-column-list navigation-list">
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Квадрокоптеры</a>
-            </li>
+          <a class="navigation-main-link" href="#">Каталог товаров</a>
+          <ul class="navigation-main-list visually-hidden">
+            <ul class="navigation-main-column-list navigation-list">
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="monopod.html">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="navigation-main-column-list navigation-list">
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="navigation-main-column-list navigation-list">
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </ul>
         </div>
-        <ul class="navigation-services-list navigation-list">
+        <ul class="navigation-service-list navigation-list">
           <li class="navigation-service-item">
-            <a class="navigation-service-link" href="#">Доставка</a>
+            <a class="navigation-service-link navigation-main-link" href="#">Доставка</a>
           </li>
           <li class="navigation-service-item">
-            <a class="navigation-service-link" href="#">Гарантия</a>
+            <a class="navigation-service-link navigation-main-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-service-item">
-            <a class="navigation-service-link" href="#">Контакты</a>
+          <li class="navigation-service-item navigation-service-item-right">
+            <a class="navigation-service-link navigation-main-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -76,7 +79,7 @@
     <main class="main-inner main-container">
       <header class="inner-header page-container">
         <h1 class="inner-header-title general-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -94,19 +97,19 @@
           <div class="catalog-header-container page-container">
             <h2 class="catalog-filter-title">Фильтр:</h2>
             <div class="sorting-type">
-              <form>
+              <form class="sorting-type-form">
                 <label class="sorting-label" for="sorting">Сортировка:</label>
                 <select class="select-control" id="sorting" name="sorting">
-                  <option value="popular">Сначала популярное</option>
+                  <option value="popular">Сначала популярные</option>
                   <option value="cheap">Сначала дешёвое</option>
                   <option value="expensive">Сначала дорогое</option>
                 </select>
                 <button class="visually-hidden" type="submit">Отсортировать продукты</button>
               </form>
-              <a href="#" class="button-up">
+              <a href="#" class="sorting-button button-up">
                 <span class="visually-hidden">Сортировать по возрастанию</span>
               </a>
-              <a href="#" class="button-down">
+              <a href="#" class="sorting-button button-down">
                 <span class="visually-hidden">Сортировать по убыванию</span>
               </a>
             </div>
@@ -242,11 +245,11 @@
                 <a class="pagination-link" href="#">3</a>
               </li>
               <li class="pagination-item">
-                <a class="pagination-link pagination-more">...</a>
+                <a class="pagination-link pagination-more">&#8230;</a>
                 <!-- Пока сделаю так, не совсем понял как сделать эту штуку декоративной -->
               </li>
               <li class="pagination-item">
-                <a class="pagination-link" href="#">5</a>
+                <a class="pagination-link" href="#">15</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link pagination-next" href="#">Вперёд</a>

@@ -5,65 +5,68 @@
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
+  <body>            
     <header class="page-header">
-      <a>
+      <a class="header-logo-link">
         <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип.">
       </a>
       <div class="page-header-center">
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="search-input">Поиск по сайту</label>
           <input class="search-input" id="search-input" type="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="account-list">
-          <li class="account-item">
+          <li class="account-item account-item-login">
             <a class="account-link" href="#">Войти</a>
           </li>
           <li class="account-item">
             <a class="account-link" href="#">Сравнить</a>
           </li>
-          <li class="account-item">
+          <li class="account-item account-item-cart">
             <a class="account-link" href="#">Корзина</a>
           </li>
         </ul>
       </div>
       <nav class="navigation-main">
         <div class="navigation-main-catalog">
-          <a class="main-catalog-link" href="#">Каталог товаров</a>
-          <ul class="navigation-main-column-list navigation-list">
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="monopod.html">Моноподы для cелфи</a>
-            </li>
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Экшн-камеры</a>
-            </li>
-          </ul>
-          <ul class="navigation-main-column-list navigation-list">
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Умные часы</a>
-            </li>
-          </ul>
-          <ul class="navigation-main-column-list navigation-list">
-            <li class="navigation-main-item">
-              <a class="navigation-main-link" href="#">Квадрокоптеры</a>
-            </li>
+          <a class="navigation-main-link" href="#">Каталог товаров</a>
+          <ul class="navigation-main-list visually-hidden">
+            <ul class="navigation-main-column-list navigation-list">
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="monopod.html">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="navigation-main-column-list navigation-list">
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="navigation-main-column-list navigation-list">
+              <li class="navigation-main-item">
+                <a class="main-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </ul>
         </div>
-        <ul class="navigation-services-list navigation-list">
+        <ul class="navigation-service-list navigation-list">
           <li class="navigation-service-item">
-            <a class="navigation-service-link" href="#">Доставка</a>
+            <a class="navigation-service-link navigation-main-link" href="#">Доставка</a>
           </li>
           <li class="navigation-service-item">
-            <a class="navigation-service-link" href="#">Гарантия</a>
+            <a class="navigation-service-link navigation-main-link" href="#">Гарантия</a>
           </li>
-          <li class="navigation-service-item">
-            <a class="navigation-service-link" href="#">Контакты</a>
+          <li class="navigation-service-item navigation-service-item-right">
+            <a class="navigation-service-link navigation-main-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -77,19 +80,11 @@
         <h2 class="visually-hidden">Демо товаров</h2>
 
         <div class="slider slider-01 slider-active">
-          <div class="slider-image-block">
-            <img class="slider-image" src="img/slider/slider-drone.png" width="560" height="560" alt="Квадрокоптер.">
-            <button class="slider-button slider-image-prev">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-image-next">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+          <img class="slider-image" src="img/slider/slider-drone.png" width="560" height="560" alt="Квадрокоптер.">
           <div class="slider-about-block">
             <p class="slider-title general-title">Порхает как бабочка, жалит как пчела!</p>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="button" href="#">Подробнее</a>
+            <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="more-button button" href="#">Подробнее</a>
             <ul class="slider-specs-list">
               <li class="slider-specs-item">
                 <b class="slider-specs-value">800 м</b>
@@ -103,20 +98,12 @@
           </div>
         </div>
 
-        <div class="slider slider-02">
-          <div class="slider-image-block">
-            <img class="slider-image" src="img/slider/slider-fitnes.png" width="560" height="560" alt="Фитнес-браслет.">
-            <button class="slider-button slider-image-prev">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-image-next">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+        <div class="slider slider-02 visually-hidden">
+          <img class="slider-image" src="img/slider/slider-fitnes.png" width="560" height="560" alt="Фитнес-браслет.">
           <div class="slider-about-block">
-            <p class="slider-title general-title">Худеем правильно!</p>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="button" href="#">Подробнее</a>
+            <p class="slider-title general-title">Худеем<br> правильно!</p>
+            <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a class="more-button button" href="#">Подробнее</a>
             <ul class="slider-specs-list">
               <li class="slider-specs-item">
                 <b class="slider-specs-value">48 часов</b>
@@ -126,20 +113,12 @@
           </div>
         </div>
 
-        <div class="slider slider-03">
-          <div class="slider-image-block">
-            <img class="slider-image" src="img/slider/slider-monopods.png" width="560" height="560" alt="Селфи-палка.">
-            <button class="slider-button slider-image-prev">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-image-next">
-              <span class="visually-hidden">Следующее фото</span>
-            </button>
-          </div>
+        <div class="slider slider-03 visually-hidden">
+          <img class="slider-image" src="img/slider/slider-monopods.png" width="560" height="560" alt="Селфи-палка.">
           <div class="slider-about-block">
-            <p class="slider-title general-title">Делай селфи, как Бен Стиллер!</p>
-            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-            <a class="button" href="monopod.html">Подробнее</a>
+            <p class="slider-title general-title">Делай селфи,<br>как Бен Стиллер!</p>
+            <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="more-button button" href="monopod.html">Подробнее</a>
             <ul class="slider-specs-list">
               <li class="slider-specs-item">
                 <b class="slider-specs-value">8,5 м</b>
@@ -174,6 +153,14 @@
             </button>
           </li>
         </ol>
+        <div class="slider-controls visually-hidden">
+          <button class="slider-button slider-image-prev">
+            <span class="visually-hidden">Предыдущее фото</span>
+          </button>
+          <button class="slider-button slider-image-next">
+            <span class="visually-hidden">Следующее фото</span>
+          </button>
+        </div>
       </section>
 
       <section class="navigation-secondary page-container">
@@ -186,7 +173,7 @@
             <a class="navigation-secondary-link" href="#">Виртуальная реальность</a>
           </li>
           <li class="navigation-secondary-item">
-            <a class="navigation-secondary-image-link monopods-image" href="#">
+            <a class="navigation-secondary-image-link monopods-image" href="monopod.html">
               <img class="navigation-monopods-image" src="img/popular/popular-monopods.svg" width="86" height="117" alt="Моноподы для селфи.">
             </a>
             <a class="navigation-secondary-link" href="monopod.html">Моноподы<br>для селфи</a>
@@ -222,17 +209,17 @@
         <h2 class="visually-hidden">Наши сервисы</h2>
         <div class="service-container page-container">
           <ul class="service-list">
-            <li class="service-btn service-btn-active">
+            <li class="service-btn">
               <a class="service-link button" href="#">Доставка</a>
             </li>
             <li class="service-btn">
               <a class="service-link button" href="#">Гарантия</a>
             </li>
-            <li class="service-btn">
+            <li class="service-btn service-btn-active">
               <a class="service-link button" href="#">Кредит</a>
             </li>
           </ul>
-          <div class="service-info service-info-01">
+          <div class="service-info service-info-01 visually-hidden">
             <h3 class="service-info-title general-title">Доставка</h3>
             <p class="service-info-text">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
@@ -246,7 +233,7 @@
               Товар, не дом, конечно же.
             </p>
           </div>
-          <div class="service-info service-info-03 visually-hidden">
+          <div class="service-info service-info-03">
             <h3 class="service-info-title general-title">Кредит</h3>
             <p class="service-info-text">
               Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
@@ -258,7 +245,7 @@
 
       <section class="delivery page-container">
         <h2 class="visually-hidden">Доставка под заказ</h2>
-        <a class="delivery-link">Доставим редкий товар под заказ</a>
+        <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
       </section>
 
       <div class="index-columns page-container">
@@ -276,7 +263,7 @@
 
         <section class="contacts">
           <h2 class="contacts-title general-title">Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис.<br> Заодно, сможете проверить работоспособность покупки.</p>
+          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.<br> Заодно, сможете проверить работоспособность покупки.</p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -361,3 +348,10 @@
     </footer>
   </body>
 </html>
+
+<!-- 
+  1. не могу найти закономерность в спецификациях на слайдах - глядя на слайды с дроном и селфи-палками - там 
+     разное расстояние между блоками спецификаций
+  2. в слайдере сервисов - текстовый блок service-info-text имеет ширину 480px для всех слайдов, кроме доставки - 
+     к нему либо отдельно применять ширину (и при этом все равно без br не обойтись), либо использовать да br 
+-->
