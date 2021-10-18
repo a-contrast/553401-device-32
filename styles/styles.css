@@ -662,13 +662,13 @@ body {
 }
 
 .subscribe {
-  padding-bottom: 100px;
   background-color: #F0F0F0;
 }
 
 .subscribe-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
   padding-top: 76px;
   background-color: #F0F0F0;
 }
@@ -928,8 +928,6 @@ body {
 }
 
 .page-footer {
-  padding-top: 62px;
-  padding-bottom: 51px;
   background-color: #444444;
   color: #FFFFFF;
 }
@@ -937,6 +935,8 @@ body {
 .page-footer-container {
   display: flex;
   flex-direction: column;
+  padding-top: 62px;
+  padding-bottom: 51px;
   background-color: #444444;
 }
 
