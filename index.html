@@ -20,7 +20,7 @@
           <li class="account-item account-item-login">
             <a class="account-link" href="#">Войти</a>
           </li>
-          <li class="account-item">
+          <li class="account-item account-item-compare">
             <a class="account-link" href="#">Сравнить</a>
           </li>
           <li class="account-item account-item-cart">
@@ -85,16 +85,12 @@
             <p class="slider-title general-title">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="more-button button" href="#">Подробнее</a>
-            <ul class="slider-specs-list">
-              <li class="slider-specs-item">
-                <b class="slider-specs-value">800 м</b>
-                <span class="slider-specs-name">Дальность полета</span>
-              </li>
-              <li class="slider-specs-item">
-                <b class="slider-specs-value">50 м</b>
-                <span class="slider-specs-name">Радиус поражения</span>
-              </li>
-            </ul>
+            <dl class="slider-specs-list">
+              <dt class="slider-specs-name">Дальность полета</dt>
+              <dd class="slider-specs-value">800 м</dd>
+              <dt class="slider-specs-name">Радиус поражения</dt>
+              <dd class="slider-specs-value">50 м</dd>
+            </dl>
           </div>
         </div>
 
@@ -104,12 +100,10 @@
             <p class="slider-title general-title">Худеем<br> правильно!</p>
             <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="more-button button" href="#">Подробнее</a>
-            <ul class="slider-specs-list">
-              <li class="slider-specs-item">
-                <b class="slider-specs-value">48 часов</b>
-                <span class="slider-specs-name">Без подзарядки</span>
-              </li>
-            </ul>
+            <dl class="slider-specs-list">
+              <dt class="slider-specs-name">Без подзарядки</dt>
+              <dd class="slider-specs-value">48 часов</dd>
+            </dl>
           </div>
         </div>
 
@@ -119,20 +113,14 @@
             <p class="slider-title general-title">Делай селфи,<br>как Бен Стиллер!</p>
             <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="more-button button" href="monopod.html">Подробнее</a>
-            <ul class="slider-specs-list">
-              <li class="slider-specs-item">
-                <b class="slider-specs-value">8,5 м</b>
-                <span class="slider-specs-name">Длина палки</span>
-              </li>
-              <li class="slider-specs-item">
-                <b class="slider-specs-value">5 кг</b>
-                <span class="slider-specs-name">Вес палки</span>
-              </li>
-              <li class="slider-specs-item">
-                <b class="slider-specs-value">Карбон</b>
-                <span class="slider-specs-name">Материал</span>
-              </li>
-            </ul>
+            <dl class="slider-specs-list">
+              <dt class="slider-specs-name">Длина палки</dt>
+              <dd class="slider-specs-value">8,5 м</dd>
+              <dt class="slider-specs-name">Вес палки</dt>
+              <dd class="slider-specs-value">5 кг</dd>
+              <dt class="slider-specs-name">Материал</dt>
+              <dd class="slider-specs-value">Карбон</dd>
+            </dl>
           </div>
         </div>
 
@@ -348,12 +336,3 @@
     </footer>
   </body>
 </html>
-
-<!--
-  чувствую переборщил я при создании сеток, возможно требуется созвон
-  1. не могу найти закономерность в спецификациях на слайдах - глядя на слайды с дроном и селфи-палками - там
-     разное расстояние между блоками спецификаций
-  2. в слайдере сервисов - текстовый блок service-info-text имеет ширину 480px для всех слайдов, кроме доставки -
-     к нему либо отдельно применять ширину (и при этом все равно без br не обойтись), либо использовать да br
-  3. навигацию (там где три списка подряд) возможно лучше сделать на гридах
--->
