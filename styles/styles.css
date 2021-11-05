@@ -580,6 +580,7 @@ input::-webkit-search-results-decoration { display: none; }
 
 .slider-button:focus {
   box-shadow: inset 0 0 0 2px #af4fff;
+  outline: none;
 }
 
 .slider-button:active {
@@ -724,59 +725,87 @@ input::-webkit-search-results-decoration { display: none; }
   grid-template-columns: repeat(6, 160px);
   gap: 40px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 78px;
   padding: 0;
   list-style-type: none;
 }
 
-.navigation-secondary-item {
-  width: 160px;
-  margin-bottom: 18px;
-}
-
-.navigation-secondary-item:hover>.navigation-secondary-image-link {
-  background-color: #FFC700;
-}
-
-.navigation-secondary-item:focus-within>.navigation-secondary-image-link {
-  box-shadow: 0 0 0 2px #af4fff;
-  outline: none;
-}
-
-.navigation-secondary-item:focus-within>.navigation-secondary-link {
-  color: #af4fff;
-  outline: none;
-}
-
-.navigation-secondary-item:active img,
-.navigation-secondary-item:active>.navigation-secondary-link {
-  opacity: 0.3;
-  color: #000000;
-}
-
-.navigation-secondary-image-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 160px;
-  height: 160px;
-  background-color: #FFE17F;
-}
-
-.navigation-monopods-image {
-  align-self: end;
-}
-
 .navigation-secondary-link {
   display: inline-block;
+  position: relative;
   width: 160px;
-  padding-top: 33px;
+  padding-top: 193px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.3px;
   text-decoration: none;
+  background: linear-gradient(to bottom, #FFE17F 160px, transparent 160px);
   color: #000000;
+}
+
+.navigation-secondary-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 160px;
+  width: 160px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.navigation-secondary-virtual::before {
+  background-image: url(../img/popular/popular-virtual.svg);
+  background-size: 97px 55px;
+}
+
+.navigation-secondary-monopods::before {
+  background-image: url(../img/popular/popular-monopods.svg);
+  background-size: 86px 117px;
+  background-position-y: bottom;
+}
+
+.navigation-secondary-action::before {
+  background-image: url(../img/popular/popular-action.svg);
+  background-size: 71px 87px;
+}
+
+.navigation-secondary-fitnes::before {
+  background-image: url(../img/popular/popular-fitnes.svg);
+  background-size: 107px 65px;
+}
+
+.navigation-secondary-watch::before {
+  background-image: url(../img/popular/popular-watch.svg);
+  background-size: 56px 98px;
+}
+
+.navigation-secondary-drone::before {
+  background-image: url(../img/popular/popular-drone.svg);
+  background-size: 132px 69px;
+}
+
+.navigation-secondary-link:hover {
+  background-color: #FFC700;
+  background: linear-gradient(to bottom, #FFC700 160px, transparent 160px);
+}
+
+.navigation-secondary-link:focus {
+  color: #AF4FFF;
+  outline: none;
+}
+
+.navigation-secondary-link:focus::before {
+  box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.navigation-secondary-link:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.navigation-secondary-link:active::before {
+  opacity: 0.3;
 }
 
 .service {
