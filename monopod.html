@@ -123,19 +123,25 @@
             <form action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-legend">Стоимость</legend>
-                <div class="range-toggle">
-                  <button class="range-toggle-button toggle-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <label class="catalog-filter-label" for="input-min">от</label>
-                  <input class="catalog-filter-input" id="input-min" type="number" name="min-price">
-                </div>
-                <div class="range-toggle">
-                  <button class="range-toggle-button toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                  <label class="catalog-filter-label" for="input-max">до</label>
-                  <input class="catalog-filter-input" id="input-max" type="number" name="max-price">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 119px">
+                    <div class="range-toggle">
+                      <button class="range-toggle-button range-toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <label class="catalog-filter-label">от
+                        <input class="catalog-filter-input" type="number" value="0" name="min-price" style="width: 14px">
+                      </label>
+                    </div>
+                    <div class="range-toggle">
+                      <button class="range-toggle-button range-toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                      <label class="catalog-filter-label">до
+                        <input class="catalog-filter-input" type="number" value="5000" name="max-price" style="width: 42px">
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </fieldset>
 
@@ -144,23 +150,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                       <input class="visually-hidden control-input" type="checkbox" id="black" name="black" checked>
-                      <label class="control" for="black">Черный</label>
+                      <label class="control-text" for="black">Черный</label>
                   </li>
                   <li class="catalog-filter-item">
                       <input class="visually-hidden control-input" type="checkbox" id="white" name="white" checked>
-                      <label class="control" for="white">Белый</label>
+                      <label class="control-text" for="white">Белый</label>
                   </li>
                   <li class="catalog-filter-item">
                     <input class="visually-hidden control-input" type="checkbox" id="blue" name="blue">
-                    <label class="control" for="blue">Синий</label>
+                    <label class="control-text" for="blue">Синий</label>
                   </li>
                   <li class="catalog-filter-item">
                     <input class="visually-hidden control-input" type="checkbox" id="red" name="red">
-                    <label class="control" for="red">Красный</label>
+                    <label class="control-text" for="red">Красный</label>
                   </li>
                   <li class="catalog-filter-item">
                     <input class="visually-hidden control-input" type="checkbox" id="pink" name="pink">
-                    <label class="control" for="pink">Розовый</label>
+                    <label class="control-text" for="pink">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -169,18 +175,12 @@
                 <legend class="catalog-filter-legend">Bluetooth</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="bluetooth" value="yes" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Есть</span>
-                    </label>
+                    <input class="visually-hidden control-input" id="bt-yes" type="radio" name="bluetooth" value="yes" checked>
+                    <label class="control-text" for="bt-yes">Есть</label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="visually-hidden control-input" type="radio" name="bluetooth" value="no">
-                      <span class="control-mark"></span>
-                      <span class="control-label">Нет</span>
-                    </label>
+                    <input class="visually-hidden control-input" id="bt-no" type="radio" name="bluetooth" value="no">
+                    <label class="control-text" for="bt-no">Нет</label>
                   </li>
                 </ul>
               </fieldset>
