@@ -31,14 +31,14 @@
                 <ul class="popover-list">
                   <li class="popover-item">
                     <a class="popover-link" href="#">
-                      <img class="popover-img" src="img/monopods/product-1.jpg" width="41px" height="43px" alt="">
+                      <img class="popover-img" src="img/monopods/product-1.jpg" width="41" height="43" alt="">
                       <span>Любительская селфи-палка</span>
                     </a>
                     <button class="popover-button-del"></button>
                   </li>
                   <li class="popover-item">
                     <a href="#" class="popover-link">
-                      <img class="popover-img" src="img/monopods/product-2.jpg" width="41px" height="43px" alt="">
+                      <img class="popover-img" src="img/monopods/product-2.jpg" width="41" height="43" alt="">
                       <span>Профессиональная селфи-палка</span>
                     </a>
                     <button class="popover-button-del"></button>
@@ -371,7 +371,7 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="modal-label modal-label-name">
               Ваше имя:
-              <input class="modal-input" type="name" placeholder="Имя Фамилия" name="name" required>
+              <input class="modal-input" type="text" placeholder="Имя Фамилия" name="name" required>
               <span class="input-bottom-info">Пожалуйста, представьтесь</span>
             </label>
             <label class="modal-label modal-label-email">
@@ -383,18 +383,17 @@
               Что нужно привезти:
               <input class="modal-input" type="text" name="goods" placeholder="В свободной форме">
             </label>
-            <label class="modal-label modal-label-count">
-              <div class="input-number-wrapper">Количество:
-                <p class="modal-tooltip">
-                  <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                    к провозу багажа.
-                  </span>
-                </p>
+            <div class="modal-label-wrapper">
+              <label class="modal-label modal-label-count" for="count">Количество:</label>
+              <div class="modal-tooltip">
+                <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.
+                </span>
               </div>
               <button class="count-btn count-btn-minus" type="button">−</button>
-              <input class="modal-input" type="number" placeholder="1" value="1" min="1" max="20" name="count" required>
+              <input class="modal-input" type="number" id="count" placeholder="1" value="1" min="1" max="20" name="count" required>
               <button class="count-btn count-btn-plus" type="button">+</button>
-            </label>
+            </div>
             <button class="modal-submit-btn button" type="submit">Отправить</button>
           </form>
         </section>
