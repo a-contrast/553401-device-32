@@ -4,102 +4,105 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
   </head>
   <body>
     <header class="page-header page-header-inner">
-      <a class="header-logo-link" href="index.html">
-        <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип.">
-      </a>
-      <div class="page-header-center">
-        <form class="search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-          <input class="search-input" id="search-input" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
-        <ul class="account-list">
-          <li class="account-item account-item-active">
-            <a class="account-link" href="#">Коля Петухов</a>
-          </li>
-          <li class="account-item account-item-exit">
-            <a class="account-link" href="#">Выйти</a>
-          </li>
-          <li class="account-item account-item-compare">
-            <a class="account-link" href="#">Сравнить</a>
-          </li>
-          <li class="account-item account-item-cart">
-            <a class="account-link" href="#">Корзина</a>
-            <div class="popover popover-cart popover-close">
-              <div class="popover-content">
-                <h2 class="visually-hidden">Корзина</h2>
-                <ul class="popover-list">
-                  <li class="popover-item">
-                    <a class="popover-link" href="#">
-                      <img class="popover-img" src="img/monopods/product-1.jpg" width="41" height="43" alt="">
-                      <span>Любительская селфи-палка</span>
-                    </a>
-                    <button class="popover-button-del"></button>
-                  </li>
-                  <li class="popover-item">
-                    <a href="#" class="popover-link">
-                      <img class="popover-img" src="img/monopods/product-2.jpg" width="41" height="43" alt="">
-                      <span>Профессиональная селфи-палка</span>
-                    </a>
-                    <button class="popover-button-del"></button>
-                  </li>
-                </ul>
-                <div class="popover-summ">
-                  <p>Товаров: <span>2</span></p>
-                  <p>Сумма: <span>2000</span> ₽</p>
+      <div class="page-header-wrapper">
+        <a class="header-logo-link" href="index.html">
+          <img class="logo" src="img/logo-header.svg" width="145" height="36" alt="Логотип.">
+        </a>
+        <div class="page-header-center">
+          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+            <input class="search-input" id="search-input" type="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+          <ul class="account-list">
+            <li class="account-item account-item-active">
+              <a class="account-link" href="#">Коля Петухов</a>
+            </li>
+            <li class="account-item account-item-exit">
+              <a class="account-link" href="#">Выйти</a>
+            </li>
+            <li class="account-item account-item-compare">
+              <a class="account-link" href="#">Сравнить</a>
+            </li>
+            <li class="account-item account-item-cart">
+              <a class="account-link" href="#">Корзина</a>
+              <div class="popover popover-cart popover-close">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Корзина</h2>
+                  <ul class="popover-list">
+                    <li class="popover-item">
+                      <a class="popover-link" href="#">
+                        <img class="popover-img" src="img/monopods/product-1.jpg" width="41" height="43" alt="">
+                        <span>Любительская селфи-палка</span>
+                      </a>
+                      <button class="popover-button-del" type="button"></button>
+                    </li>
+                    <li class="popover-item">
+                      <a href="#" class="popover-link">
+                        <img class="popover-img" src="img/monopods/product-2.jpg" width="41" height="43" alt="">
+                        <span>Профессиональная селфи-палка</span>
+                      </a>
+                      <button class="popover-button-del" type="button"></button>
+                    </li>
+                  </ul>
+                  <div class="popover-summ">
+                    <p>Товаров: <span>2</span></p>
+                    <p>Сумма: <span>2000</span> ₽</p>
+                  </div>
+                  <a class="popover-button-open" href="#">Открыть корзину</a>
                 </div>
-                <a class="popover-button-open" href="#">Открыть корзину</a>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <nav class="navigation-main">
-        <div class="navigation-main-catalog">
-          <a class="navigation-main-link catalog-open-close" href="#">Каталог товаров</a>
-          <div class="navigation-main-list">
-            <ul class="navigation-main-column-list navigation-list">
-              <li class="navigation-main-item">
-                <a class="main-catalog-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="navigation-main-item">
-                <a class="main-catalog-link" href="monopod.html">Моноподы для cелфи</a>
-              </li>
-              <li class="navigation-main-item">
-                <a class="main-catalog-link" href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="navigation-main-column-list navigation-list">
-              <li class="navigation-main-item">
-                <a class="main-catalog-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="navigation-main-item">
-                <a class="main-catalog-link" href="#">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="navigation-main-column-list navigation-list">
-              <li class="navigation-main-item">
-                <a class="main-catalog-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
-          </div>
+            </li>
+          </ul>
         </div>
-        <ul class="navigation-service-list navigation-list">
-          <li class="navigation-service-item">
-            <a class="navigation-service-link navigation-main-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-service-item">
-            <a class="navigation-service-link navigation-main-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-service-item navigation-service-item-right">
-            <a class="navigation-service-link navigation-main-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
+        <nav class="navigation-main">
+          <div class="navigation-main-catalog">
+            <a class="navigation-main-link catalog-open-close" href="#">Каталог товаров</a>
+            <div class="navigation-main-list">
+              <ul class="navigation-main-column-list navigation-list">
+                <li class="navigation-main-item">
+                  <a class="main-catalog-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="navigation-main-item">
+                  <a class="main-catalog-link" href="monopod.html">Моноподы для cелфи</a>
+                </li>
+                <li class="navigation-main-item">
+                  <a class="main-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-main-column-list navigation-list">
+                <li class="navigation-main-item">
+                  <a class="main-catalog-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-main-item">
+                  <a class="main-catalog-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="navigation-main-column-list navigation-list">
+                <li class="navigation-main-item">
+                  <a class="main-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="navigation-service-list navigation-list">
+            <li class="navigation-service-item">
+              <a class="navigation-service-link navigation-main-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-service-item">
+              <a class="navigation-service-link navigation-main-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-service-item navigation-service-item-right">
+              <a class="navigation-service-link navigation-main-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main-inner main-container">
@@ -123,7 +126,7 @@
           <div class="catalog-header-container page-container">
             <h2 class="catalog-filter-title">Фильтр:</h2>
             <div class="sorting-type">
-              <form class="sorting-type-form">
+              <form class="sorting-type-form" action="https://echo.htmlacademy.ru">
                 <label class="sorting-label" for="sorting">Сортировка:</label>
                 <select class="select-control" id="sorting" name="sorting">
                   <option value="popular">Сначала популярные</option>
